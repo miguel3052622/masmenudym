@@ -1,0 +1,93 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR GENERAL */
+.dashboard-container {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.dashboard-header {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.dashboard-header button {
+  background: none;
+  border: none;
+  color: #c0392b;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dashboard-header button:hover {
+  text-decoration: underline;
+}
+
+/* GRID 4 PARTES */
+.dashboard-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CUADRANTES */
+.dashboard-box {
+  background-color: #d26036e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-box h2 {
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.dashboard-box p {
+  font-size: 14px;
+  color: #fafbfb;
+}
+.dashboard-box-admin {
+  background-color: #575757;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
